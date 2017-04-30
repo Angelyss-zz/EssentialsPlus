@@ -16,7 +16,7 @@ using TShockAPI.Hooks;
 
 namespace EssentialsPlus
 {
-	[ApiVersion(2, 0)]
+	[ApiVersion(2, 1)]
 	public class EssentialsPlus : TerrariaPlugin
 	{
 		public static Config Config { get; private set; }
