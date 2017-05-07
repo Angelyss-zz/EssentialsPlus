@@ -555,7 +555,7 @@ namespace EssentialsPlus
 		public static void PvP(CommandArgs e)
 		{
 			e.TPlayer.hostile = !e.TPlayer.hostile;
-			TSPlayer.All.SendData(PacketTypes.TogglePvp, "", e.Player.Index);
+			TSPlayer.All.SendData(PacketTypes.TogglePvp, null, e.Player.Index);
 			TSPlayer.All.SendMessage(String.Format("{0} {1}", e.Player.Name, e.TPlayer.hostile ? Lang.mp[11] : Lang.mp[12]), Main.teamColor[e.Player.Team]);
 		}
 
